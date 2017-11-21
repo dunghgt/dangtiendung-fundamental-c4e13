@@ -1,0 +1,22 @@
+Why should we use functions at all?
+- Nhìn chương trình chính dễ
+- Tránh lỗi con người
+- Để dễ update
+How to define/declare a function?
+- def sth():
+How to call/use a function?
+- from <file_sth.py> import sth
+- sth()
+What is return, why and how do we use it?
+- return để xuất ra output
+- nếu k return thì k xuất ra output
+- xuất ra thì chương trình dùng function ấy phải hứng output
+  vd: r = sth()
+Do we have to use return in every function?
+- Không. Ta chỉ cần khi lấy kết quả ra
+What are function arguments, why and how we use it?
+- sth(0, 12, 'w')
+- 0 12 'w' là function arguments
+- Dùng nó để nhét input vào những chỗ muốn nhét
+How to use function from a different file other than our currently working file?
+- from <file_sth.py> import sth

@@ -1,41 +1,28 @@
 from random import *
+from simp_cal import eval
 
-loop_continue = True
-while True:
+def generate_quiz():
     x = randint(0, 10)
-    y = randint(1, 10)
+    y = randint(0, 10)
     opers = ['*', '+', '-', '/']
     oper = choice(opers)
-
-    if oper == '*':
-        a = x * y
-    elif oper == '+':
-        a = x + y
-    elif oper == '-':
-        a = x - y
-    elif oper == '/':
-        if y == 0:
-            print('nana')
-        else:
-            a = x / y
+    if y == 0 and oper == '/':
+        y = randint(1, 10)
+    a = eval(x, y, oper)
 
     error = randint(-1, 1)
     a_rand = a + error
+    # Hint: Return [x, y, op, result]
+    return [x, y, oper, a_rand]
 
-    def generate_quiz():
-        # Hint: Return [x, y, op, result]
-        return [x, y, oper, a_rand]
-
-    def check_answer(x, y, oper, a_rand, user_choice):
-        if error == 0:
-            if user_choice:
-                return True
-            else:
-                return False
-                loop_continue = False
+def check_answer(x, y, oper, a_rand, user_choice):
+    if eval(x, y, oper) == a_rand:
+        if user_choice:
+            return True
         else:
-            if user_choice:
-                return False
-                loop_continue = False
-            else:
-                return True
+            return False
+    else:
+        if user_choice:
+            return False
+        else:
+            return True

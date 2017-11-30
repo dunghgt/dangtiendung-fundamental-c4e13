@@ -1,0 +1,19 @@
+body {
+  background-color: pink;
+  color: #191811;
+}
+
+h4 {
+  font-family: 'Atomic Age', cursive;
+  font-size: 4em;
+  text-align: right;
+  padding-top: 170px;
+  padding-right: 200px;
+}
+
+p {
+  font-size: georgia;
+  font-style: oblique;
+  font-size: 1.5em;
+  padding-left: 600px;
+}

@@ -1,0 +1,17 @@
+.hihi {
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding-top: 0;
+  text-align: center;
+}
+
+.hihi li {
+  display: inline;
+}
+
+.hihi a {
+  display: inline-block;
+  padding: 10px;
+}

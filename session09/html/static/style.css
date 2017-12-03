@@ -1,0 +1,102 @@
+#logo{
+  max-height: 40px;
+  width: auto;
+}
+
+body{
+  margin-bottom: 0px;
+}
+
+nav{
+  padding: 10px 0px 10px 0px;
+  border-top: 0.7px #ccc solid;
+  border-bottom: 0.7px #ccc solid;
+  box-shadow: 0px 1px 1px 0.5px #ccc;
+
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav li{
+  display: inline-block;
+  width: 20%;
+}
+
+a{
+  text-decoration:none;
+}
+
+#article-title{
+  font-family: 'Spectral SC', serif;
+  font-size: 3em;
+}
+
+#article-subtitle{
+  font-size: 2em;
+  font-style: italic;
+  color: #5d5d5d;
+}
+
+.content{
+  padding: 0px 8px 0px 8px;
+}
+
+.article-heading{
+  border-bottom: 0.5px solid #ccc;
+}
+
+.related-articles{
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.related-article{
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.m-l-100{
+  margin-left: 100px;
+}
+
+.article-content{
+  width: 60%;
+  display: inline-block;
+}
+
+.most-popular{
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article-img{
+  float: right;
+}
+
+.footer{
+  background-color: black;
+  text-align: center;
+  height: 80px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.footer h4{
+  margin: 0px;
+  /*color: white;*/
+}
+
+.footer a{
+  margin-left: 30px;
+  color: white;
+  display: inline-block;
+  top: 50%;
+  position: relative;
+  /*transform: translateY(-50%);*/
+}

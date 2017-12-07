@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="/static/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/popper.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar bg-info flex-md-row">
+      <h2 class="navbar-item mr-3 text-light" style="font-family: 'Amatic SC', cursive"> <strong>Đèn không lối thoát</strong> </h2>
+      <img style="width: 50px" class="mr-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgQbVn6FIixovCimpcddtsuI9B_UnNHWd1fd57jkxSwxSyQnky" alt="Đèn">
+      <ul class="nav">
+        <li class="nav-item mr-3"> <a class="text-light" href="#">Đăng kí</a> </li>
+        <li class="nav-item"> <a class="text-light" href="#">Đăng nhập</a> </li>
+      </ul>
+    </nav>
+    <div id="img" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#img" data-slide-to="0" class="active"></li>
+        <li data-target="#simg" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="img-fruid w-100"  style="height: 600px;" src="http://i1150.photobucket.com/albums/o617/redsvn/2013/12/IMG_0464.jpg~original" alt="">
+          <div class="carousel-caption left-caption">
+            <h3>Bạn không có đèn?</h3>
+            <p>Hãy đến với chúng tôi</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="img-fruid w-100"  style="height: 600px;" src="http://www.3wedge.com/blog/wp-content/uploads/2015/05/Light.jpg" alt="">
+          <div class="carousel-caption">
+            <h3>Bạn có đèn?</h3>
+            <p>Hãy đến với chúng tôi</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#img" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">previous</span>
+      </a>
+      <a class="carousel-control-next" href="#img" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">next</span>
+      </a>
+    </div>
+    <div class="col-xs-12" style="height:50px;"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="bg-dark pb-3">
+            <h3 class="text-light">Đèn nhiều màu</h3>
+          </div>
+          <img class="img-fruid" style="width: 255px; height: 200px" src="http://buondenled.com/wp-content/uploads/2016/10/D%C3%A2y-%C4%91%C3%A8n-th%E1%BA%A3-nhi%E1%BB%81u-m%C3%A0u-262x262.jpg" alt="">
+          <div class="border pb-3">
+            <h5 class="">Nhiều màu</h5>
+          </div>
+          <h4 class="border border-info text-center">3000000 VNĐ</h4>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+    <h2>{{ title }}</h2>
+    <img src="{{ image }}" alt="">
+  </body>
+</html>

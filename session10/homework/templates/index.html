@@ -48,29 +48,32 @@
         <span class="sr-only">next</span>
       </a>
     </div>
-    <div class="col-xs-12" style="height:50px;"></div>
+    <div class="col-xs-12" style="height:80px;"></div>
 
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <div class="bg-dark pb-3">
-            <h3 class="text-light">Đèn nhiều màu</h3>
+        {% for light in lights %}
+          <div class="col-md-3">
+            <div class="bg-dark pb-3 text-center">
+              <h3 class="text-light">{{ light.title }}</h3>
+            </div>
+            <img class="img-fruid" style="width: 255px; height: 200px" src="{{ light.img }}" alt="">
+            <div class="border pb-3">
+              <h5 class="text-secondary">{{ light.description }}</h5>
+            </div>
+            <h4 class="border border-info text-center p-2">
+              {{ light.price }}
+              <div class="text-center float-right">
+                <a type="button" class="btn-danger pr-1 pl-1 pb-1" href="#">Mua</a>
+              </div>
+            </h4>
           </div>
-          <img class="img-fruid" style="width: 255px; height: 200px" src="http://buondenled.com/wp-content/uploads/2016/10/D%C3%A2y-%C4%91%C3%A8n-th%E1%BA%A3-nhi%E1%BB%81u-m%C3%A0u-262x262.jpg" alt="">
-          <div class="border pb-3">
-            <h5 class="">Nhiều màu</h5>
-          </div>
-          <h4 class="border border-info text-center">3000000 VNĐ</h4>
-        </div>
-
+        {% endfor %}
       </div>
 
     </div>
+    <div class="col-xs-12" style="height:100px;"></div>
 
 
-
-
-    <h2>{{ title }}</h2>
-    <img src="{{ image }}" alt="">
   </body>
 </html>

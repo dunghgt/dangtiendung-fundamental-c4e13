@@ -21,5 +21,3 @@ while True:
         )
 
     a.save()
-
-    lights = Light.objects()

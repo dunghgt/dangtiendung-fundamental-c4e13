@@ -1,0 +1,46 @@
+.brand{
+  font-family: 'Amatic SC', cursive;
+}
+
+a{
+  text-decoration: none;
+}
+
+#first-icon{
+  width: 50px;
+}
+
+.carousel-item{
+  height: 600px;
+}
+
+.img-card{
+  height: 200px;
+}
+
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.space{
+  width: 100%;
+  height: 563px;
+}
+
+
+input{
+  margin: 10px;
+}
+
+.ok-babe{
+  font-family: 'Amatic SC', cursive;
+}
+
+form textarea{
+  margin: 10px;
+}

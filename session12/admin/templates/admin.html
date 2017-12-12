@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  admin
+{% endblock %}
+
+{% block page_content %}
+  <div class="row m-3">
+    <div class="col-md-4 m-auto">
+      <div class="card text-center">
+        <div class="card header">
+          <h5>Wanna add some thing? (Đèn thôi nha)</h5>
+        </div>
+        <div class="item-body">
+          <form class="py-4" method="post">
+            <input type="text" name="title" value="" placeholder="Tên đồ"><br>
+            <input type="text" name="image" value="" placeholder="Link ảnh"><br>
+            <input type="text" name="description" value="" placeholder="Mô tả"><br>
+            <input type="int" name="price" value="" placeholder="Giá tiền"><br>
+            
+            <button class="btn btn-primary" type="submit" name="button" value="add">add</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <table class="w-100 m-3 table  table-striped">
+      <thead class="thead-dark">
+          <th scope="col">Tên</th>
+          <th scope="col">Mô tả</th>
+          <th scope="col">Ảnh</th>
+          <th scope="col">Giá</th>
+          <th scope="col"></th>
+      </thead>
+      <tbody>
+        {% for light in lights %}
+        <tr id="table_light">
+          <td scope="row">{{ light.title }}</td>
+          <td>{{ light.description }}</td>
+          <td>
+            <a href="{{ light.img }}">link</a>
+          </td>
+          <td>{{ light.price }} VNĐ</td>
+          <td>
+            <a href="/edit/{{ light.id }}"><i class="fa fa-wrench text-dark m-1" aria-hidden="true"></i></a>
+            <a href="/delete/{{ light.id }}"><i class="fa fa-trash text-danger m-1" aria-hidden="true"></i></a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}
